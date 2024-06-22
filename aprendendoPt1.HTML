@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÁGINA WEB</title>
+
+    <!--Aqui podemos usar o css no HEAD em caso de personalização total-->
+
+<style>
+    body{
+        background-color:black
+        color(srgb red green blue)
+    }
+</style>
+</head>
+<body>
+   <script>
+    
+    window.alert('Como você vai?');   // Aqui vai aparecer uma boxe acima com a mensagem digitada
+
+    window.confirm('Eu vou bem demais obrigado');  // Aqui vai ser a confirmação da resposta anterior por isso o 'CONFIRM'
+
+    window.prompt('Qual é o seu nome?');   // Aqui vai aparecer uma boxe com alguma pergunta
+
+
+
+    var nome = window.prompt('Qual a cor o seu cabelo?');  // Como no exemplo acima, precisamos de um lugar para guardar essa INF. ,  então usamos uma VARIÁVEL '' nome ''
+    window.alert('A cor do meu cabelo é ' + nome);  // Então usamos o ALERT para guardar a resposta do PROMPT, para guardar a resposta puxamos a VARIÁVEL criada.
+
+
+    var n1 = window.prompt('Digite um número')  
+                                                 // Do jeito que está aqui ao digitar o comando irá conacatenar '' + '' por isso será necessáro converter para NÚMERO   
+    var n2 = window.prompt('Digite outro número')
+
+
+
+
+    var n1 = Number.parseInt(window.prompt('Digite um número'))
+                                                                // Aqui usamos o '' number.parseInt '' para converter de string para NUMBER, e então terá a função de somar
+
+                                                                // Ou podemos usar a versão mais atualizada que seria somente '' NUMBER ''
+    var n2 = Number.parseInt(window.prompt('Digite outro número'))
+
+    var S = n1 + n2;
+
+    window.alert('O resultado da soma é ' + S);
+
+
+
+    window.alert(`A soma entre ${n1} mais ${n2} é igual a ${S}`)   // Podemos usar esta forma que deixaria o codigo mais limpo e entendido, usando o placeHolder '' ${} ''
+
+
+    s.lenght   // Quantos caracteres tem uma string
+    s.toUpperCase()   // Tudo para 'MAIÚSCULAS'
+    s.toLowercase()   // Tudo para 'Minúsculas'
+
+
+
+    var n1 = 1545
+
+    n1.toLocaleString ('pt-br', {style: 'currency', currency: 'BRL'})  // comando para dizer que quer converter para o real
+
+
+
+    
+   </script>
+</body>
+</html>
